@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>注册页面</title>
+
+	<link rel="stylesheet" href="../css/7.css" />
+	<style>
+		.author,
+		.movies {
+			width: 80%;
+			height: auto;
+			margin: 30px 10%;
+		}
+
+		.author p {
+			text-indent: 2em;
+			font-size: 30px;
+			margin-top: 20px;
+			color: hotpink;
+		}
+
+
+		.movies {
+			width: 80%;
+			height: auto;
+			/* background-color: whitesmoke; */
+			margin: 20px 10%;
+			margin-bottom: 120px;
+			padding-bottom: 120px;
+		}
+
+		.movies ul {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			list-style: none;
+		}
+
+		.movies ul li {
+			width: calc(100% / 3.2);
+			margin: 50px 1%;
+			box-shadow: 1px 3px 3px darkgray;
+			background-color: white;
+			padding: 40px;
+		}
+
+		.movies ul li img {
+			width: 100%;
+			height: 390px;
+			box-shadow: 1px 3px 3px darkgray;
+			display: block;
+			margin: 10px auto;
+			border-radius: 12px;
+			object-fit: cover;
+		}
+
+		.movies ul li img:hover {
+			transition: all .3s;
+			box-shadow: 6px 6px 10px darkgray;
+		}
+
+		.movies ul li .username {
+			font-weight: bold;
+			font-size: 30px;
+			line-height: 70px;
+			color: hotpink;
+		}
+
+		.movies ul li .msgs {
+			line-height: 55px;
+			font-size: 30px;
+			color: blue;
+		}
+
+		/* 添加导航栏字体大小样式 */
+		.weizhi .shell li span a,
+		.weizhi .shell li ul li a {
+			font-size: 20px;
+			/* 你可以根据需要调整这个值 */
+		}
+
+		.weizhi .shell li ul li {
+			font-size: 20px;
+			/* 用于非链接文本 */
+		}
+
+		/* 新增或修改导航栏字号样式 */
+		.weizhi ul,
+		.weizhi ul li,
+		.weizhi ul li span,
+		.weizhi ul li a {
+			font-size: 20px;
+		}
+
+		/* 调整字号大小 */
+
+
+		.login {
+			width: 40%;
+			height: 850px;
+			border-radius: 12px;
+			background-color: ghostwhite;
+			margin: 140px 30%;
+			box-shadow: 3px 3px 2px lightgray;
+			padding: 40px;
+		}
+
+		.login .title {
+			color: #007b0f;
+		}
+
+		.login input {
+			width: 70%;
+			height: 50px;
+			border-radius: 2px;
+			margin: 20px 15%;
+			outline: none;
+			border: transparent;
+			text-indent: 1em;
+			font-size: 23px;
+		}
+
+		.login button {
+			width: 70%;
+			height: 50px;
+			border-radius: 30px;
+			margin: 20px 15%;
+			border: transparent;
+			background-color: deeppink;
+			font-size: 25px;
+			color: white;
+		}
+
+		.login p {
+			margin-left: 160px;
+			margin-top: 20px;
+			font-size: 25px;
+		}
+
+		.login p a {
+			text-decoration: none;
+			color: black;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="weizhi">
+		<ul class="shell">
+			<li class="button">
+				<span><a href="../朋友圈网站.html">首页</a></span>
+				<ul>
+					<li><a href="留言.html">留言板</a></li>
+					<li><a href=关于我们.html>关于我们</a></li>
+					<li><a href="登录.html">登录</a></li>
+				</ul>
+			</li>
+
+			<li class="button">
+				<span><a href="书单.html">书单</a></span>
+				<ul>
+					<li>推理</li>
+					<li>成长</li>
+					<li>科幻</li>
+					<li>心理</li>
+				</ul>
+			</li>
+
+			<li class="portrait">
+				<ul class="information">
+					<li>特立独行的猫</li>
+					<li>bilibili:喝加啡の猫</li>
+					<li>QQ632406603</li>
+				</ul>
+			</li>
+
+			</li>
+			<li class="button">
+				<span><a href="小众电影1.html">小众电影</a></span>
+				<ul>
+
+				</ul>
+			</li>
+
+			<li class="button">
+				<span><a href="../Pages/动画.html">动画推荐</a></span>
+				<ul>
+
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div class="banner"></div>
+
+	<div class="login">
+		<h4 class="title">登录与注册</h4>
+		<form action="">
+
+			<input type="text" placeholder="用户名" />
+			<input type="email" placeholder="邮箱" />
+			<input type="text" maxlength="11" minlength="11" placeholder="手机号" />
+			<input type="password" placeholder="密码" />
+			<input type="password" placeholder="确认密码" />
+			<button>登录</button>
+			<p>
+				已经有账号？<a href="注册.html">立即登录</a>
+			</p>
+
+
+		</form>
+
+	</div>
+
+
+
+
+
+</body>
+
+</html>

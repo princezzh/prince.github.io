@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    </mead>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>zzh的网站</title>
+    <link rel="stylesheet" href="自己弄的css/syle.css" />
+    <style>
+        .main {
+            width: 100%;
+            height: 850px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+
+            img {
+                border-radius: 50%;
+                position: relative;
+                left: 500px;
+                padding: 40px
+            }
+        }
+
+        .zihao {
+            font-size: 2em;
+            color: aqua;
+
+        }
+
+
+        .weizhi {
+            height: 60px;
+            font-size: 60px;
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+            left: 0px;
+            background-color: rgb(189, 180, 181);
+        }
+
+        .shell {
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            margin-top: -10px;
+
+
+        }
+
+        .button,
+        .portrait {
+            position: relative;
+            background-color: rgb(189, 180, 181);
+            width: 170px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            transition: .3s;
+            cursor: pointer;
+        }
+
+        .portrait::before {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            transform: translate(30px, -30px);
+            background-image: url('image/头像.jpg');
+            background-size: cover;
+            border: 10px solid #fff;
+        }
+
+        .information {
+            position: absolute;
+            /* 绝对定位 */
+            top: 60px;
+            /* 位于按钮下方 */
+            left: 0;
+            width: 220px;
+            width: 220px;
+            background-color: #e07a5f;
+            transform: translate(-20px, -200px);
+            border-radius: 10px;
+            padding: 20px 0;
+            line-height: 0;
+            height: 0;
+            transition: .3s;
+            opacity: 0;
+            transform: translateY(10px);
+            /* 初始状态下向下偏移 */
+            z-index: 1000;
+            /* 确保在其他元素之上 */
+        }
+
+        .button:hover {
+            background-color: #d15a39;
+        }
+
+        .button li:hover {
+            background-color: #ffb29d;
+        }
+
+        .button ul {
+            position: absolute;
+            /* 绝对定位 */
+            top: 100%;
+            /* 位于按钮下方 */
+            left: 0;
+            width: 170px;
+            /* 与按钮宽度一致 */
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            z-index: 1000;
+            /* 确保在其他元素之上 */
+        }
+
+        .button ul li {
+
+            height: 0;
+            transition: .2s;
+            opacity: 0;
+            transform: translateY(-65px);
+            background-color: #e07a5f;
+
+        }
+
+        .button:hover li {
+            height: 65px;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .portrait:hover .information {
+            opacity: 1;
+            line-height: 65px;
+            transform: translate(-20px, -10px);
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="image/banner.png" alt="banner" class="banner">
+
+        <div class="weizhi">
+
+            <ul class="shell">
+                <li class="button">
+                    <span><a href="朋友圈网站.html">首页</a></span>
+                    <ul>
+                        <li><a href="留言.html">留言板</a></li>
+                        <li><a href="Pages/关于我们.html">关于我们</a></li>
+                        <li><a href=Pages/登录.html>登录</a></li>
+                    </ul>
+                </li>
+
+                <li class="button">
+                    <span><a href="Pages/书单.html">书单</a></span>
+                    <ul>
+                        <li>推理</li>
+                        <li>成长</li>
+                        <li>科幻</li>
+                        <li>心理</li>
+                    </ul>
+                </li>
+                <li class="portrait">
+                    <ul class="information">
+                        <li>特立独行的猫</li>
+                        <li>bilibili:喝加啡の猫</li>
+                        <li>粉丝:1.5W</li>
+                        <li>QQ号:632406603</li>
+                    </ul>
+                </li>
+                <li class="button">
+                    <span><a href="Pages/小众电影1.html">小众电影</a></span>
+                    <ul>
+
+                    </ul>
+                </li>
+
+                <li class="button">
+                    <span><a href="Pages/动画.html">动画推荐</a></span>
+                    <ul>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="title">zzh
+
+        </div>
+
+        <div class="main">
+            <div class="wenben-left">
+                <div class="zihao">
+                    <b>:name</b>
+                </div>
+                <p>ソウさん</p>
+                <div class="zihao">
+                    <b>:age</b>
+
+                </div>
+                <p>
+                    secret
+                </p>
+                <div class="zihao">
+                    <b>:hobby</b>
+                </div>
+                <p>chess
+                </p>
+
+            </div>
+            <img src="image/头像.jpg" alt="头像" class="touxiang" width="15%" height="30%">
+            <div class="wenben-right">
+                <div class="zihao">
+                    <b>introduce:</b>
+                </div>
+
+                <p>I taught myself all sorts of things,
+                    <br> but most of them gave up halfway.
+                </p>
+
+            </div>
+
+
+
+        </div>
+        <!--zzh版权所有那部分的style-->
+        <div class="footer">
+            zzh@版权所有-2024
+        </div>
+</body>
